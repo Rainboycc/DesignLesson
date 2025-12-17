@@ -1,0 +1,63 @@
+---
+excalidraw-plugin: parsed
+tags:
+  - excalidraw
+excalidraw-onload-script: 'icons = app.vault.getFiles() .filter(f => f.extension !== "md" && f.basename.toLowerCase().contains("icon")) .sort((a, b) => a.basename.toLowerCase() < b.basename.toLowerCase() ? -1 : 1);numberOfColumns = 6;HEIGHT = 100;WIDTH = 100;PADDING = 20;ea.getExcalidrawAPI().resetScene();column = 0;row = 0;for (icon of icons) { id = await ea.addImage( column * (WIDTH + PADDING), row * (HEIGHT + PADDING), icon ); el = ea.getElement(id); ratio = el.width / WIDTH; if (el.height / ratio > HEIGHT) ratio = el.height / HEIGHT; el.width = el.width / ratio; el.height = el.height / ratio; if (++column === numberOfColumns) { row++; column = 0; }}await ea.addElementsToView();ea.getExcalidrawAPI().zoomToFit();ea.getExcalidrawAPI().updateScene({ appState: { viewModeEnabled: true }});'
+---
+==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
+
+
+# Excalidraw Data
+
+## Text Elements
+## Embedded Files
+16c3f0c4a5f555793a36a9ad440a00dbf81e4b70: [[icon_问题.svg]]
+
+5f9719faa6b1aded70dbb7653412c77c7b1fac5e: [[icon_树状图.svg]]
+
+6cb16f77b8dad55b3ea38b9b5e6b7d5d21be8ea2: [[icon_长箭头.svg]]
+
+1cec676c806c120219813c23241bf30b16e42444: [[icon_电池.svg]]
+
+282ecb769b55afbfa93a85e7e47039383463f931: [[icon_钱袋.svg]]
+
+4d01eb233dc1d5713fcb15e4083d51a1adcb5667: [[icon_房子,屋子,小屋.svg]]
+
+e4bf82e813fb0f29951cb3091f11775a98b9db1c: [[icon_短箭头.svg]]
+
+a1e53ee01aafecb855ba2d985ed7723f2316bf18: [[icon_砖块.svg]]
+
+%%
+## Drawing
+```compressed-json
+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
+```
+%%
